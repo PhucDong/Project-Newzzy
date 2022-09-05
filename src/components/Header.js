@@ -1,21 +1,15 @@
 import React from "react";
-import ProjectLogo from "../images/project-logo.png";
-import MainNavigationBar from "./MainNavigationBar";
-import ContentNavigationBar from "./ContentNavigationBar";
+import HeaderTop from "./HeaderTop";
+import HeaderBottom from "./HeaderBottom";
+import "./Header.css";
 
 const Header = () => {
     return (
-        <header>
-            <div>
-                <img src={ProjectLogo} alt="project logo" />
-                <input 
-                    type="text" 
-                    placeholder="Search for the verified news..." 
-                />
-
-                <MainNavigationBar />
-                <ContentNavigationBar />
-            </div>
+        <header className="app__header">
+            <section className="container">
+                <HeaderTop />
+                <HeaderBottom />
+            </section>
         </header>
     );
 }
