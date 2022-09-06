@@ -16,7 +16,6 @@ const LogIn = () => {
             <input 
                 type="password"
                 placeholder="Enter your password"
-                autocomplete="on"
                 maxlength="8"
             />
             <button>Log In</button>
