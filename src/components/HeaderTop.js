@@ -2,6 +2,7 @@ import React from "react";
 import ProjectLogo from "../images/project-logo.png";
 import {BiSearch} from "react-icons/bi";
 import "./HeaderTop.css";
+import {Link} from "react-router-dom";
 
 const HeaderTop = () => {
     return (
@@ -19,13 +20,20 @@ const HeaderTop = () => {
 
             <nav className="app__header-top-navbar">
                 <ul className="app__header-top-navbar-links">
-                    {
-                        ["Home", "Sign Up", "Log In"].map((item) => (
+                    {/* {["Home", "Sign Up", "Log In"].map((item) => (
                             <li key={`link-${item}`}>
                                 <a href={`#${item}`}>{item}</a>
                             </li>
-                        ))
-                    }
+                    ))} */}
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/signup">Sign Up</Link>
+                    </li>
+                    <li>
+                        <Link to="/login">Log In</Link>
+                    </li>
                 </ul>
             </nav>
         </div>

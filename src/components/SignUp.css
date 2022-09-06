@@ -1,4 +1,5 @@
-.signUpForm {
+/* SignIn Form */
+.signUpForm, .logInForm {
     height: 525px;
     width: 590px;
     display: flex;
@@ -7,6 +8,7 @@
     align-items: center;
     margin: 0 auto;
     margin-top: 56px;
+    padding: 0 42px;
     background-color: #E2E2E2;
 }
 
@@ -21,7 +23,7 @@
     font-size: 24px;
     border-radius: 5px;
     border: none;
-    width: 507px;
+    width: 100%;
     margin-bottom: 14px;
 }
 
@@ -29,6 +31,10 @@
     margin-bottom: 0;
     background-color: #2565AE;
     color: #fff;
+}
+
+.signUpForm button:hover {
+    cursor: pointer;
 }
 
 .signUpForm p {
@@ -43,4 +49,31 @@
 
 .signUpForm p a:hover {
     text-decoration: underline;
+}
+
+/* LogIn Form */
+.logInForm {
+    height: 411px;
+}
+
+.logInForm p a {
+    color: #000;
+    font-weight: lighter;
+}
+
+.logInForm p a:hover {
+    text-decoration: underline;
+}
+
+/* Reset Password Form */
+.resetPasswordForm {
+    height: 338px;
+}
+
+.resetPasswordForm h2, .resetPasswordForm p {
+    margin-bottom: 22px;
+}
+
+.resetPasswordForm p {
+    margin-top: 0;
 }

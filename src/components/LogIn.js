@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from "./Header";
 import "./SignUp.css";
-import "./LogIn.css";
+import {Link} from "react-router-dom";
 
 const LogIn = () => {
   return (
     <>
         <Header />
-        <div className="signUpForm">
+        <div className="signUpForm logInForm">
             <h2>LOG IN</h2>
             <input 
                 type="text"
@@ -22,7 +22,7 @@ const LogIn = () => {
             <button>Log In</button>
             
             <p>
-                <a href="#">Forgot your password?</a>
+                <Link to="/resetpassword">Forgot your password?</Link>
             </p>
         </div>
     </>
