@@ -8,8 +8,11 @@ const HeaderTop = () => {
     return (
         <div className="app__header-top">
             <div className="app__header-top-img-container">
-                <img src={ProjectLogo} alt="project logo" />
+                <Link to="/">
+                    <img src={ProjectLogo} alt="project logo" />
+                </Link>
             </div>
+
             <div className="app__header-top-searchbar">
                 <BiSearch className="app__header-top-searchbar-icon" />
                 <input 
@@ -20,11 +23,6 @@ const HeaderTop = () => {
 
             <nav className="app__header-top-navbar">
                 <ul className="app__header-top-navbar-links">
-                    {/* {["Home", "Sign Up", "Log In"].map((item) => (
-                            <li key={`link-${item}`}>
-                                <a href={`#${item}`}>{item}</a>
-                            </li>
-                    ))} */}
                     <li>
                         <Link to="/">Home</Link>
                     </li>
