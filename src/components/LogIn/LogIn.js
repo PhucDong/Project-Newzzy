@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from "./Header";
-import "./SignUp.css";
+import Header from "../Header/Header";
+import "../SignUp/SignUp.css";
 import {Link} from "react-router-dom";
 
 const LogIn = () => {

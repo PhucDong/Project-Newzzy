@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from "./Header";
-import "./SignUp.css";
+import Header from "../Header/Header";
+import "../SignUp/SignUp.css";
 
-const ForgotPassword = () => {
+const ResetPassword = () => {
   return (
     <>
         <Header />
@@ -21,4 +21,4 @@ const ForgotPassword = () => {
   )
 }
 
-export default ForgotPassword;
+export default ResetPassword;

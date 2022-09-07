@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from "./Header";
+import Header from "../Header/Header";
 import "./SignUp.css";
 import {Link} from "react-router-dom";
 
