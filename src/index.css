@@ -12,3 +12,8 @@ ul {
 a {
   text-decoration: none;
 }
+
+.container {
+  padding: 0 80px;
+  height: 100%;
+}
