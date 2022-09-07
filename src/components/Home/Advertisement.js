@@ -1,7 +1,7 @@
 import React from 'react';
-import "./Home.css";
+import "./Advertisement.css";
 
-const Home = () => {
+const Advertisement = () => {
   return (
     <section className="advertisement">
       <div className="container advertisement__container">
@@ -13,4 +13,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default Advertisement;

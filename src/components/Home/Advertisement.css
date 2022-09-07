@@ -3,7 +3,7 @@
 }
 
 .advertisement__container {
-    background: url("../assets/advertisement.jpg");
+    background: url("../../assets/advertisement.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
