@@ -15,6 +15,7 @@ const OtherNews = () => {
     rows: 2,
     slidesPerRow: 1,
   }
+
   return (
     <>
       <section className='othernews'>
@@ -60,4 +61,4 @@ const OtherNews = () => {
   )
 }
 
-export default OtherNews
+export default OtherNews;

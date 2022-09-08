@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { featured } from "../../../data"
 import Heading from "../../common/heading/Heading"
 import "./FeaturedNews.css"
-import Card from "./cards"
+import Cards from "./Cards"
 
 const FeaturedNews = () => {
   const [items, setItems] = useState(featured)
@@ -15,7 +15,7 @@ const FeaturedNews = () => {
           {items.map((item) => {
             return (
               <>
-                <Card key={item.id} item={item} />
+                <Cards key={item.id} item={item} />
               </>
             )
           })}
