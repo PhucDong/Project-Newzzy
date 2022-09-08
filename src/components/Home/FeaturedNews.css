@@ -1,3 +1,11 @@
+.featured-news {
+    margin-top: 70px;
+}
+
+.featured-news__container h2 {
+    margin-bottom: 16px;
+}
+
 .featured-news__news-cards {
     display: flex;
     flex-wrap: wrap;
