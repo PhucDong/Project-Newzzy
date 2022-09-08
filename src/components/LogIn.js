@@ -1,12 +1,10 @@
 import React from 'react';
-import Header from "./Header";
 import "./SignUp.css";
 import "./LogIn.css";
 
 const LogIn = () => {
   return (
     <>
-        <Header />
         <div className="signUpForm">
             <h2>LOG IN</h2>
             <input 
