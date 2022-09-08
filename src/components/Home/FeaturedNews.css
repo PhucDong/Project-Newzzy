@@ -1,4 +1,4 @@
-/* .featured-news__news-cards {
+.featured-news__news-cards {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -10,4 +10,4 @@
 
 .featured-news__news-cards > *:nth-child(2) {
     margin-right: 0;
-} */
+}

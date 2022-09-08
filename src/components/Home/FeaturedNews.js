@@ -10,8 +10,7 @@ const FeaturedNews = () => {
 
             <div className="featured-news__news-cards">
                 <NewsCard />
-                {/* <NewsCard />
-                <NewsCard /> */}
+                <NewsCard />
             </div>
         </div>
     </section>

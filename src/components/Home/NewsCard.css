@@ -1,17 +1,17 @@
 .featured-news__news-card {
-    width: 493px;
+    width: 542px;
     height: 477px;
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .featured-news__body {
-    width: 493px;
+    width: 100%;
     height: 197px;
 }
 
 .featured-news__image-container {
-    width: 493px;
+    width: 100%;
     height: 280px;
 }
 
