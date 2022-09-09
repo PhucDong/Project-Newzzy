@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Card = ({ item: { id, cover, category, title, authorName, time } }) => {
+const Cards = ({ item: { id, cover, category, title, authorName, time } }) => {
   return (
     <>
       <div className='box'>
         <div className='img'>
-          <img src={cover} alt='' />
+          <img src={cover} alt={title} />
         </div>
         <div className='text'>
           <span className='category'>{category}</span>
@@ -24,4 +24,4 @@ const Card = ({ item: { id, cover, category, title, authorName, time } }) => {
   )
 }
 
-export default Card
+export default Cards;

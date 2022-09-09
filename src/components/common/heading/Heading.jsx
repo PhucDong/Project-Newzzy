@@ -1,5 +1,5 @@
-import React from "react"
-import "./heading.css"
+import React from "react";
+import "./Heading.css";
 
 const Heading = ({ title }) => {
   return (
@@ -11,4 +11,4 @@ const Heading = ({ title }) => {
   )
 }
 
-export default Heading
+export default Heading;

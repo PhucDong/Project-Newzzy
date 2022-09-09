@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { featured } from "../../../data"
 import Heading from "../../common/heading/Heading"
 import "./FeaturedNews.css"
-import Cards from "./Cards"
+import Cards from "./Cards";
 
 const FeaturedNews = () => {
   const [items, setItems] = useState(featured)
@@ -10,13 +10,12 @@ const FeaturedNews = () => {
   return (
     <>
       <section className='featured'>
-      <Heading title='Featured News' />
+        <Heading title='Featured News' />
+
         <div className='container'>
           {items.map((item) => {
             return (
-              <>
-                <Cards key={item.id} item={item} />
-              </>
+              <Cards key={item.id} item={item} />
             )
           })}
         </div>
