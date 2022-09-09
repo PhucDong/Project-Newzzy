@@ -1,12 +1,12 @@
 import React from "react"
 import FeaturedNews from "./featuredNews/FeaturedNews"
-import OtherNews from "./otherNews/OtherNews"
+import Homes from "./homes/homes"
 
 const Homepages = () => {
   return (
     <>
       <FeaturedNews />
-      <OtherNews />
+      <Homes />
     </>
   )
 }

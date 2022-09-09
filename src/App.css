@@ -103,10 +103,10 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  border-left: 5px solid #fb4c35;
+  border-left: 5px solid #0236FA;
   width: auto;
   display: block;
-  background: linear-gradient(to right, #fb4c35 50%, black 50%);
+  background: linear-gradient(to right, #0236FA 50%, black 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
@@ -148,4 +148,4 @@ a {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 10px -10px;
 }
 
-/*----------global----------- */
+/* ----------global----------- */

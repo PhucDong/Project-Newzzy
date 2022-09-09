@@ -3,11 +3,11 @@
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 .app__header-top-img-container {
-    height: 40px;
+    height: 10px;
     width: 159px;
 }
 

@@ -1,21 +1,22 @@
-import React, { useState } from "react"
-import { featured } from "../../../data"
-import Heading from "../../common/heading/Heading"
-import "./FeaturedNews.css"
-import Cards from "./Cards";
+import React, { useState } from "react";
+// import { featured } from "../../../data";
+import { featured } from "../../../data";
+import Heading from "../../common/heading/Heading";
+import "./FeaturedNews.css";
+import Card from "./Cards";
 
 const FeaturedNews = () => {
-  const [items, setItems] = useState(featured)
-
   return (
     <>
       <section className='featured'>
         <Heading title='Featured News' />
-
+        
         <div className='container'>
-          {items.map((item) => {
+          {featured.map((item) => {
             return (
-              <Cards key={item.id} item={item} />
+              <>
+                <Card key={item.id} item={item} />
+              </>
             )
           })}
         </div>
@@ -24,4 +25,4 @@ const FeaturedNews = () => {
   )
 }
 
-export default FeaturedNews
+export default FeaturedNews;

@@ -1,64 +1,47 @@
 import React from "react"
 import "./otherNews.css"
-import Slider from "react-slick"
 import Heading from "../../common/heading/Heading"
 import { other } from "../../../data"
 
-const OtherNews = () => {
-  const settings = {
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    centerPadding: "0",
-    slidesToShow: 1,
-    speed: 500,
-    rows: 2,
-    slidesPerRow: 1,
-  }
 
+const OtherNews = () => {
   return (
     <>
       <section className='othernews'>
         <Heading title='Other News' />
         <div className='content'>
-          <Slider {...settings}>
-            {other
-              .filter((val) => val.category === "World")
-              .map((val) => {
+            {other.map((item) => {
                 return (
                   <div className='items'>
                     <div className='box shadow flexSB'>
                       <div className='images'>
                         <div className='img'>
-                          <img src={val.cover} alt='' />
+                          <img src={item.cover} alt='' />
                         </div>
                         <div class='category category1'>
-                          <span>{val.category}</span>
+                          <span>{item.category}</span>
                         </div>
                       </div>
                       <div className='text'>
-                        <h1 className='title'>{val.title.slice(0, 40)}...</h1>
+                        <h1 className='title'>{item.title}...</h1>
                         <div className='date'>
-                          <i class='fas fa-calendar-days'></i>
-                          <label>{val.date}</label>
+                          <label>{item.date}</label>
                         </div>
-                        <p className='desc'>{val.desc.slice(0, 250)}...</p>
+                        <p className='desc'>{item.desc}...</p>
                         <div className='comment'>
-                          <i class='fas fa-share'></i>
-                          <label>Share / </label>
-                          <i class='fas fa-comments'></i>
-                          <label>{val.comments}</label>
+                          <span>by {item.authorName}</span>
+                          <span> Comment:</span>
+                          <label>{item.comments}</label>
                         </div>
                       </div>
                     </div>
                   </div>
                 )
               })}
-          </Slider>
         </div>
       </section>
     </>
   )
 }
 
-export default OtherNews;
+export default OtherNews
