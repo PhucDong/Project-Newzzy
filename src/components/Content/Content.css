@@ -1,41 +1,76 @@
-.app_content--container {
-    background-color: lightgrey;
-    padding-top: 12px;
-    padding-right: 0px;
-    margin-right: 400px;
-    margin: auto;
-    max-width: 1280px;  
-
+.detailed-content {
+    margin-top: 70px;
 }
 
-.app_content--title {
-    text-align: left;
-    padding-top: 60px;
-    padding-left: 60px;
-    font-size: 60px;
-    text-transform: uppercase;
+.detailed-content__container {
+    width: 900px;
 }
 
-.app_content--content {
-    text-align: justify;
-    padding-right: 60px;
-    padding-left: 60px;
-    font-size: 120%;
+.detailed-content__container h3 {
+    font-size: 40px;
 }
 
-.app_content--description {
-    padding-left: 60px;
-    padding-bottom: 30px;
+.detailed-content__sub-header {
+    margin-top: 20px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.app_content--function {
-    text-align: right;
-    padding-right: 60px;
+.detailed-content__sub-header-left {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.app_content--button {
-    background-color: lightblue;
-    border-color: white;
-    border-radius: 0%;
-    padding: 4px;
+.detailed-content__sub-header-right {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detailed-content__social-media {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detailed-content__img-container {
+    width: 900px;
+    height: 400px;
+}
+
+.detailed-content__img-container img {
+    height: 400px;
+}
+
+.detailed-content__body {
+    padding: 30px 0;
+}
+
+.detailed-content__body p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.detailed-content__body p:last-child {
+    margin-bottom: 0;
+}
+
+.detailed-content__comment {
+    margin-top: 16px;
+}
+
+.detailed-content__comment p {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.detailed-content__comment textarea {
+    width: 100%;
+    padding: 14px 20px;
 }
