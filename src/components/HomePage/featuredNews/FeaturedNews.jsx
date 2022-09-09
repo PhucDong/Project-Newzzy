@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { featured } from "../../../data";
 import Heading from "../../common/heading/Heading";
 import "./FeaturedNews.css";
-import Card from "./Cards";
+import Card from "./cards";
 
 const FeaturedNews = () => {
   return (
