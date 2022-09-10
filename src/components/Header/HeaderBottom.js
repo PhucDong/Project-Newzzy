@@ -1,6 +1,5 @@
 import React from "react";
 import "./HeaderBottom.css";
-import {Link} from "react-router-dom";
 
 const HeaderBottom = () => {
     return (
@@ -10,7 +9,7 @@ const HeaderBottom = () => {
                     {
                         ["Science", "Technology", "Sports", "Games"].map((item) => (
                             <li key={`link-${item}`}>
-                                <Link to={`/${item.toLowerCase()}`}>{item}</Link>
+                                <a href={`#${item}`}>{item}</a>
                             </li>
                         ))
                     }

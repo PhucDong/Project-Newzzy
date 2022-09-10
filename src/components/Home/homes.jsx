@@ -1,6 +1,6 @@
-import React from "react"
-import OtherNews from "../otherNews/OtherNews"
-import "./homes.css"
+import React from "react";
+import OtherNews from "./OtherNews";
+import "./homes.css";
 
 const Homes = () => {
   return (
@@ -16,4 +16,4 @@ const Homes = () => {
   )
 }
 
-export default Homes
+export default Homes;

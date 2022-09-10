@@ -1,8 +1,8 @@
-import hero1 from "./images/hero/hero1.jpg"
-import hero2 from "./images/hero/hero2.jpg"
-import hero3 from "./images/hero/hero3.jpg"
-import hero4 from "./images/hero/hero4.png"
-import cover from "./images/otherNews/other1.jpg"
+import hero1 from "./images/hero/hero1.jpg";
+import hero2 from "./images/hero/hero2.jpg";
+import hero3 from "./images/hero/hero3.jpg";
+import hero4 from "./images/hero/hero4.png";
+import cover from "./images/otherNews/othernews1.jpg";
 
 
 export const featured = [

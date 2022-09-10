@@ -1,7 +1,8 @@
+
 import React from "react";
-import ProjectLogo from "../../assets/project-logo.png";
-import {BiSearch} from "react-icons/bi";
 import "./HeaderTop.css";
+import ProjectLogo from "../../images/project-logo.png";
+import {BiSearch} from "react-icons/bi";
 import {Link} from "react-router-dom";
 
 const HeaderTop = () => {

@@ -1,8 +1,8 @@
 import React from   'react';
-import Advertisement from '../Home/Advertisement';
+import Advertisement from '../Advertisement/Advertisement';
 import Header from '../Header/Header';
 import {BsTwitter, BsFacebook, BsLinkedin} from "react-icons/bs";
-import FeaturedNews1 from "../../assets/featurednews1.jpg";
+import FeaturedNews1 from "../../images/featurednews1.jpg";
 import "./Content.css";
 
 const Content = () => {
