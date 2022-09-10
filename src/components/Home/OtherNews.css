@@ -1,5 +1,12 @@
-.othernews .box {
-  margin-bottom: 30px;
+.content .items {
+  margin-bottom: 24px;
+}
+
+.content .items:last-child {
+  margin-bottom: 0;
+}
+
+.othernews .box { 
   margin-left: 2px;
 }
 

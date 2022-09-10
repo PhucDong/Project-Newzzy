@@ -20,13 +20,13 @@
 }
 
 .detailed-content__sub-header-left {
-    width: 300px;
+    width: 360px;
     display: flex;
     justify-content: space-between;
 }
 
 .detailed-content__sub-header-right {
-    width: 320px;
+    width: 360px;
     display: flex;
     justify-content: space-between;
 }
@@ -36,6 +36,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.detailed-content__social-media li a {
+    display: flex;
 }
 
 .detailed-content__img-container {

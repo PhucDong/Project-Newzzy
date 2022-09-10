@@ -11,13 +11,13 @@ const OtherNews = () => {
         <div className='content'>
           {other.map((item) => {
             return (
-              <div className='items'>
+              <div key={item.id} className='items'>
                 <div className='box shadow item__container'>
                   <div className='images'>
                     <div className='img'>
                       <img src={item.cover} alt={item.title} />
                     </div>
-                    <div class='category category1'>
+                    <div className='category category1'>
                       <span>{item.category}</span>
                     </div>
                   </div>

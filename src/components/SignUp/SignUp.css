@@ -1,4 +1,4 @@
-/* SignIn Form */
+/* SignUp Form */
 .signUpForm, .logInForm {
     height: 525px;
     width: 590px;
@@ -70,10 +70,12 @@
     height: 338px;
 }
 
-.resetPasswordForm h2, .resetPasswordForm p {
-    margin-bottom: 22px;
+.resetPasswordForm h2 {
+    margin-bottom: 8px;
 }
 
 .resetPasswordForm p {
     margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 20px;
 }

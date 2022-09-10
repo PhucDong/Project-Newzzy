@@ -2,6 +2,7 @@ import React from   'react';
 import Advertisement from '../Advertisement/Advertisement';
 import Header from '../Header/Header';
 import {BsTwitter, BsFacebook, BsLinkedin} from "react-icons/bs";
+import {Link} from "react-router-dom";
 import FeaturedNews1 from "../../images/featurednews1.jpg";
 import "./Content.css";
 
@@ -25,13 +26,13 @@ const Content = () => {
                             <div className="detailed-content__sub-header-right">
                                 <ul className="detailed-content__social-media">
                                     <li>
-                                        <a href="#"><BsFacebook /></a>
+                                        <Link to={<Content />}><BsFacebook /></Link>
                                     </li>
                                     <li>
-                                        <a href="#"><BsLinkedin /></a>
+                                        <Link to={<Content />}><BsLinkedin /></Link>
                                     </li>
                                     <li>
-                                        <a href="#"><BsTwitter /></a>
+                                        <Link to={<Content />}><BsTwitter /></Link>
                                     </li>
                                 </ul>
                                 <p>5 September 2022</p>
