@@ -1,0 +1,21 @@
+.featured-news {
+    margin-top: 70px;
+}
+
+.featured-news__container h2 {
+    margin-bottom: 16px;
+}
+
+.featured-news__news-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.featured-news__news-cards > * {
+    margin-right: 24px;
+}
+
+.featured-news__news-cards > *:nth-child(2) {
+    margin-right: 0;
+}

@@ -1,4 +1,5 @@
 import React from "react";
+
 import './App.css';
 import { BrowserRouter as Router, Routes , Route } from "react-router-dom"
 import Homepages from "./components/HomePage/Homepages";
@@ -10,9 +11,8 @@ import ForgotPassword from './components/LoginSignup/ForgotPassword';
 
 const App = () => {
   return ( 
-    <>
-      <Router>
-        <Header />
+    <Router>
+      <Header />
         <Advertisement />
         <Routes>
           <Route exact path='/' element={<Homepages />} />
@@ -21,7 +21,7 @@ const App = () => {
           <Route path="/login" element={<LogIn />} />
           <Route path="/resetpassword" element={<ForgotPassword />} />
         </Routes>
-      </Router>
+     </Router>
     </>
   );
 }
