@@ -1,18 +1,16 @@
 import React from "react";
 import './App.css';
-import { BrowserRouter, Routes , Route } from "react-router-dom";
-import Homepages from "./components/Home/Homepages";
 import Header from "./components/Header/Header";
+import Advertisement from "./components/Advertisement/Advertisement";
+import HomePage from "./components/Home/HomePage";
 
 const App = () => {
   return ( 
-    <BrowserRouter>
+    <>
       <Header />
-      <Routes>
-        <Route exact path='/' element={<Homepages />} />
-        <Route path="/" element={<App />} />
-      </Routes>
-    </BrowserRouter>
+      <Advertisement />
+      <HomePage />
+    </>
   );
 }
 

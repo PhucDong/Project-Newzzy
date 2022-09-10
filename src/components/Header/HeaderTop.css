@@ -7,8 +7,18 @@
 }
 
 .app__header-top-img-container {
-    height: 10px;
+    height: 40px;
     width: 159px;
+}
+
+.app__header-top-img-container a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.app__header-top-img-container img {
+    height: 100%;
 }
 
 .app__header-top-searchbar {

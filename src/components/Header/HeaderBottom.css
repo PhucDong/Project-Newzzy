@@ -6,17 +6,18 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
-    padding-left: 30px;
-    padding-top:  80px;
 }
 
 .app__header-bottom-navbar-links li {
     margin: 0 16px;
 }
 
-.app__header-bottom-navbar-links li:nth-child(1) {
+.app__header-bottom-navbar-links li:first-child {
     margin-left: 0;
+}
+
+.app__header-bottom-navbar-links li:last-child {
+    margin-right: 0;
 }
 
 .app__header-bottom-navbar-links li a {

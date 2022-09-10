@@ -2,25 +2,21 @@ import React from "react";
 import { featured } from "../../data";
 import Heading from "../Heading/Heading";
 import "./FeaturedNews.css";
-import Card from "./cards";
+import FeaturedNewsCard from "./FeaturedNewsCard";
 
 const FeaturedNews = () => {
   return (
-    <>
-      <section className='featured'>
-        <Heading title='Featured News' />
+    <section className='featured-news'>
+      <Heading title='Featured News' />
         
-        <div className='container'>
-          {featured.map((item) => {
-            return (
-              <>
-                <Card key={item.id} item={item} />
-              </>
-            )
-          })}
-        </div>
-      </section>
-    </>
+      <div className='featured-news__card-container'>
+        {featured.map((item) => {
+          return (
+            <FeaturedNewsCard key={item.id} item={item} />
+          )
+        })}
+      </div>
+    </section>
   )
 }
 

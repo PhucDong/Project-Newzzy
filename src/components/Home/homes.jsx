@@ -1,6 +1,6 @@
 import React from "react";
 import OtherNews from "./OtherNews";
-import "./homes.css";
+import "./Homes.css";
 
 const Homes = () => {
   return (
