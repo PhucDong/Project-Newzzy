@@ -4,12 +4,12 @@ import hero3 from "./images/hero/hero3.jpg";
 import hero4 from "./images/hero/hero4.png";
 import cover from "./images/otherNews/othernews1.jpg";
 
-
 export const featured = [
     {
       id: 1,
       cover: hero1,
-      category: "featured",
+      category: "technology",
+      isFeatured: true,
       title: "The decreasing popularity of HDD",
       authorName: "Nguyen Duy Quang",
       time: "05 Sep - 2022",
@@ -44,7 +44,8 @@ export const featured = [
     {
       id: 2,
       cover: hero2,
-      category: "sport",
+      category: "sports",
+      isFeatured: false,
       title: "More than billion football fans attend Brazil world cup",
       authorName: "alex",
       time: "05 Sep - 2022",
@@ -79,6 +80,7 @@ export const featured = [
     {
       id: 3,
       cover: hero3,
+      isFeatured: false,
       category: "technology",
       title: "No escaping new high tech speed cameras",
       authorName: "rina",
@@ -114,8 +116,9 @@ export const featured = [
     {
       id: 4,
       cover: hero4,
-      category: "fashion",
-      title: "Emma Watson stands up for Turkish women",
+      isFeatured: false,
+      category: "science",
+      title: "Emma Watson supports new cure for COVID19",
       authorName: "sunil",
       time: "05 Sep - 2022",
       comments: 6,
