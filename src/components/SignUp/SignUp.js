@@ -20,12 +20,11 @@ const SignUp = () => {
             <input 
                 type="password"
                 placeholder="Enter your password"
-                maxlength="8"
+                maxLength="8"
             />
             <input 
                 type="password"
                 placeholder="Confirm your password"
-                autocomplete="on"
                 maxlength="8"
             />
             <button>Sign Up</button>

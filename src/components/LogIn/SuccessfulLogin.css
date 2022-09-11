@@ -1,0 +1,33 @@
+.successful-login {
+    height: 318px;
+    padding: 0 24px;
+}
+
+.successful-login h2 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.successful-login p {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.successful-login a {
+    display: block;
+    text-align: center;
+    padding: 12px 15px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin-bottom: 0;
+    background-color: #2565AE;
+    color: #fff;
+}
+
+.successful-login a:hover {
+    cursor: pointer;
+}
