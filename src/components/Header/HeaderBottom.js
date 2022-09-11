@@ -8,7 +8,7 @@ const HeaderBottom = () => {
             <nav className="app__header-bottom-navbar">
                 <ul className="app__header-bottom-navbar-links">
                     {
-                        ["Science", "Technology", "Sports", "Games"].map((item) => (
+                        ["Science", "Technology", "Sports"].map((item) => (
                             <li key={`link-${item}`}>
                                 <Link to={`/${item.toLowerCase()}`}>{item}</Link>
                             </li>

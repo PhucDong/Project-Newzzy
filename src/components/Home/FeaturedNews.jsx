@@ -1,5 +1,5 @@
 import React from "react";
-import { featured } from "../../data";
+import { featuredHome } from "../../dataHome";
 import Heading from "../Heading/Heading";
 import "./FeaturedNews.css";
 import FeaturedNewsCard from "./FeaturedNewsCard";
@@ -10,7 +10,7 @@ const FeaturedNews = () => {
       <Heading title='Featured News' />
         
       <div className='featured-news__card-container'>
-        {featured.map((item) => {
+        {featuredHome.map((item) => {
           return (
             <FeaturedNewsCard key={item.id} item={item} />
           )

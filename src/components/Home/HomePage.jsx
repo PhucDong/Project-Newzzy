@@ -5,12 +5,12 @@ import "./HomePage.css";
 
 const HomePage = () => {
   return (
-    <main className="main-content">
+    <section className="main-content">
       <div className="container">
         <FeaturedNews />
         <OtherNews />
       </div>
-    </main>
+    </section>
   )
 }
 

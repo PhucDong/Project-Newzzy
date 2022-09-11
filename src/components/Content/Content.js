@@ -1,9 +1,10 @@
 import React from   'react';
-import Advertisement from '../Advertisement/Advertisement';
 import Header from '../Header/Header';
-import {BsTwitter, BsFacebook, BsLinkedin} from "react-icons/bs";
-import {Link} from "react-router-dom";
-import FeaturedNews1 from "../../images/featurednews1.jpg";
+import Advertisement from '../Advertisement/Advertisement';
+// import {BsTwitter, BsFacebook, BsLinkedin} from "react-icons/bs";
+// import {Link} from "react-router-dom";
+// import FeaturedNews1 from "../../images/featurednews1.jpg";
+import HomePage from "../Home/HomePage";
 import "./Content.css";
 
 const Content = () => {
@@ -11,8 +12,8 @@ const Content = () => {
         <>
             <Header />
             <Advertisement />
-
-            <section className="detailed-content">
+            <HomePage />
+            {/* <section className="detailed-content">
                 <div className="container">
                     <div className="detailed-content__container">
                         <h3>Martinez trains as Reds prepare for La Real</h3>
@@ -64,10 +65,8 @@ const Content = () => {
                             </textarea>
                         </div>
                     </div>
-
-                    
                 </div>
-            </section>
+            </section> */}
         </>
     );
 }

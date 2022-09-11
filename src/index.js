@@ -6,7 +6,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SignUp from "./components/SignUp/SignUp";
 import LogInPage from "./components/LogIn/LogInPage";
 import ResetPassword from './components/ResetPassword/ResetPassword';
-import Content from "./components/Content/Content";
+import SciencePage from "./components/Content/Science/SciencePage";
+import TechnologyPage from "./components/Content/Technology/TechnologyPage";
+import SportsPage from "./components/Content/Sports/SportsPage";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,10 +19,9 @@ root.render(
       <Route path="/login" element={<LogInPage />} />
       <Route path="/resetpassword" element={<ResetPassword />} />
       <Route path="/" element={<App />} />
-      <Route path="/science" element={<Content />} />
-      <Route path="/technology" element={<Content />} />
-      <Route path="/sports" element={<Content />} />
-      <Route path="/games" element={<Content />} />
+      <Route path="/science" element={<SciencePage />} />
+      <Route path="/technology" element={<TechnologyPage />} />
+      <Route path="/sports" element={<SportsPage />} />
     </Routes>
   </BrowserRouter>
 );

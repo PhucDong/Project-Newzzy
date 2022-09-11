@@ -10,10 +10,7 @@ const FeaturedNewsCard = ({ item }) => {
       </div>
 
       <div className='text'>
-        {(item.isFeatured) ? 
-          (<span className='category'>Featured</span>) : (
-          <span className='category'>{item.category}</span>
-        )}
+        <span className='category'>{item.category}</span>
 
         <Link to={`/Content/${item.id}`}>
           <h1 className='titleBg'>{item.title}</h1>

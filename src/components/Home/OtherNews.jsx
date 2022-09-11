@@ -1,7 +1,7 @@
 import React from "react";
 import "./OtherNews.css";
 import Heading from "../Heading/Heading";
-import { other } from "../../data";
+import { otherHome } from "../../dataHome";
 
 
 const OtherNews = () => {
@@ -9,7 +9,7 @@ const OtherNews = () => {
     <section className='othernews'>
       <Heading title='Other News' />
         <div className='content'>
-          {other.map((item) => {
+          {otherHome.map((item) => {
             return (
               <div key={item.id} className='items'>
                 <div className='box shadow item__container'>
