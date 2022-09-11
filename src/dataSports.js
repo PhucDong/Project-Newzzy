@@ -115,7 +115,7 @@ export const featuredSports = [
   {
     id: 4,
     cover: sports4,
-    category: "science",
+    category: "sports",
     title: "Great Races: Allison Schmitt and Her Tour De Force in 200 Freestyle At London Games",
     authorName: "John Lohn",
     time: "10 September 2022",
