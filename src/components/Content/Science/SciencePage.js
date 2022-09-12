@@ -1,13 +1,11 @@
 import React from 'react';
-import Header from "../../Header/Header";
-import Advertisement from "../../Advertisement/Advertisement";
 import FeaturedScience from "./FeaturedScience";
 import OtherScience from "./OtherScience";
+import Advertisement from "../../Advertisement/Advertisement";
 
 const SciencePage = () => {
     return (
         <>
-            <Header />
             <Advertisement />
             <section className="main-content">
                 <div className="container">

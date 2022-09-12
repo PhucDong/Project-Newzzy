@@ -1,10 +1,9 @@
 import React from   'react';
 import Header from '../Header/Header';
 import Advertisement from '../Advertisement/Advertisement';
-// import {BsTwitter, BsFacebook, BsLinkedin} from "react-icons/bs";
-// import {Link} from "react-router-dom";
-// import FeaturedNews1 from "../../images/featurednews1.jpg";
-import HomePage from "../Home/HomePage";
+import {BsTwitter, BsFacebook, BsLinkedin} from "react-icons/bs";
+import {Link} from "react-router-dom";
+import FeaturedNews1 from "../../images/featurednews1.jpg";
 import "./Content.css";
 
 const Content = () => {
@@ -12,8 +11,7 @@ const Content = () => {
         <>
             <Header />
             <Advertisement />
-            <HomePage />
-            {/* <section className="detailed-content">
+            <section className="detailed-content">
                 <div className="container">
                     <div className="detailed-content__container">
                         <h3>Martinez trains as Reds prepare for La Real</h3>
@@ -66,7 +64,7 @@ const Content = () => {
                         </div>
                     </div>
                 </div>
-            </section> */}
+            </section>
         </>
     );
 }

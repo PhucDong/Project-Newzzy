@@ -3,6 +3,7 @@ import { featuredHome } from "../../dataHome";
 import Heading from "../Heading/Heading";
 import "./FeaturedNews.css";
 import FeaturedNewsCard from "./FeaturedNewsCard";
+// import {Link} from "react-router-dom";
 
 const FeaturedNews = () => {
   return (
@@ -12,7 +13,9 @@ const FeaturedNews = () => {
       <div className='featured-news__card-container'>
         {featuredHome.map((item) => {
           return (
-            <FeaturedNewsCard key={item.id} item={item} />
+            // <Link to="/detailed-content">
+              <FeaturedNewsCard key={item.id} item={item} />
+            // </Link>
           )
         })}
       </div>

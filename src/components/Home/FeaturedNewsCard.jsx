@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./FeaturedNewsCard.css";
 
 const FeaturedNewsCard = ({ item }) => {
@@ -12,9 +12,9 @@ const FeaturedNewsCard = ({ item }) => {
       <div className='text'>
         <span className='category'>{item.category}</span>
 
-        <Link to={`/Content/${item.id}`}>
+        {/* <Link to={`/Content/${item.id}`}> */}
           <h1 className='titleBg'>{item.title}</h1>
-        </Link>
+        {/* </Link> */}
         
         <div className='author flex'>
           <span>by {item.authorName}</span>

@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import Header from "../Header/Header";
 import LogInForm from "./LogInForm";
 import SuccessfulLogin from "./SuccessfulLogin";
 
@@ -29,7 +28,6 @@ const LogInPage = () => {
 
     return (
         <>
-            <Header />
             <div className="container">
                 {(user.email !== "" || user.password !== "") ? (
                     <SuccessfulLogin />
