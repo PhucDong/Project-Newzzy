@@ -1,0 +1,57 @@
+footer {
+    margin-top: 60px;
+    padding: 20px 0;
+    color: #fff;
+    background-color: #2565ae;
+}
+
+.footer__top {
+    display: flex;
+    width: 100%;
+}
+
+.footer__top a, .footer__category, d.footer__contact {
+    color: #fff;
+    padding-right: 120px;
+}
+
+.footer__top a, .footer__category {
+    font-size: 20px;
+}
+
+/* Contacts */
+.footer__contact {
+    padding-right: 0;
+}
+
+.footer__contact h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.footer__hotline {
+    margin-bottom: 16px;
+}
+
+.footer__social-media svg {
+    display: inline-block;
+    font-size: 26px;
+    margin-right: 16px;
+}
+
+.footer__social-media svg:hover {
+    cursor: pointer;
+}
+
+.footer__social-media svg:last-child {
+    margin-right: 0;
+}
+
+/* Copyright */
+.footer__bottom {
+    margin-top: 24px;
+}
+
+.footer__bottom p {
+    text-align: center;
+}

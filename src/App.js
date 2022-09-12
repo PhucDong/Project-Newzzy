@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import HomePage from "./components/Home/HomePage";
 import { Routes, Route } from 'react-router-dom';
 import SignUp from "./components/SignUp/SignUp";
@@ -27,6 +28,8 @@ const App = () => {
         <Route path="/sports" element={<SportsPage />} />
         <Route path="/detailed-content" element={<Content />} />
       </Routes>
+
+      <Footer />
     </>
   );
 }
