@@ -1,5 +1,4 @@
 import React from   'react';
-import Header from '../Header/Header';
 import Advertisement from '../Advertisement/Advertisement';
 import {BsTwitter, BsFacebook, BsLinkedin} from "react-icons/bs";
 import {Link} from "react-router-dom";
@@ -9,7 +8,6 @@ import "./Content.css";
 const Content = () => {
     return (
         <>
-            <Header />
             <Advertisement />
             <section className="detailed-content">
                 <div className="container">

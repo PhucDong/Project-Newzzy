@@ -1,3 +1,7 @@
 .box .author {
     display: flex;
 }
+
+.box:hover {
+    cursor: pointer;
+}

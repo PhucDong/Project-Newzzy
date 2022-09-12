@@ -1,10 +1,18 @@
 import React from "react";
 // import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./FeaturedNewsCard.css";
 
 const FeaturedNewsCard = ({ item }) => {
+  const navigate = useNavigate();
+
   return (
-    <div className='box'>
+    <div 
+      className='box'
+      onClick={() => {
+        navigate("/detailed-content")
+      }}
+    >
       <div className='img'>
         <img src={item.cover} alt='' />
       </div>
