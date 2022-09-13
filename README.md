@@ -2,7 +2,7 @@
     <img src="https://user-images.githubusercontent.com/98811149/189880708-256bafce-4899-4752-9bc7-ad370d657a86.png" height="178">
 </p>
 
-**Update: 12 September 2022**
+**Update: 13 September 2022**
 
 ## Description
 This is a group project from the Software Engineering Project Management course (ISYS2101). Initially, the project tries to alleviate the state of fake news that causes confusion among people. To do that, my team wants to build a trustworthy online social news for readers.
