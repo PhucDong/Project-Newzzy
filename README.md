@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/98811149/189879731-eb6e5e0c-5d5f-4dda-b9d8-e1d8256cd875.png" height="128">
+    <img src="https://user-images.githubusercontent.com/98811149/189879731-eb6e5e0c-5d5f-4dda-b9d8-e1d8256cd875.png" height="258">
 </p>
 
 **Update: 12 September 2022**
