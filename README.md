@@ -1,9 +1,5 @@
 <p align="center">
-  <a href="https![updated-project-logo](https://user-images.githubusercontent.com/98811149/189879731-eb6e5e0c-5d5f-4dda-b9d8-e1d8256cd875.png)
-://nextjs.org">
-    <img src="" height="128">
-    <h1 align="center">Next.js</h1>
-  </a>
+    <img src="https://user-images.githubusercontent.com/98811149/189879731-eb6e5e0c-5d5f-4dda-b9d8-e1d8256cd875.png" height="128">
 </p>
 
 **Update: 12 September 2022**
