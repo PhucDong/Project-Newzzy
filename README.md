@@ -1,6 +1,6 @@
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/98811149/189879731-eb6e5e0c-5d5f-4dda-b9d8-e1d8256cd875.png" height="258">
-</p>
+    <img src="https://user-images.githubusercontent.com/98811149/189880708-256bafce-4899-4752-9bc7-ad370d657a86.png" height="222">
+</p>!
 
 **Update: 12 September 2022**
 
