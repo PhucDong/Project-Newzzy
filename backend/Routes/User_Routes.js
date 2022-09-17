@@ -48,15 +48,16 @@ router.get('/email/:email', function (req, res) {
         routeErrorHandler(err, docs, res, "Cannot Get the document from Users Collection");
     });
 });
- // get the user with the mongodb _id that matches the one in the url parameter
+ // get the user with the id that matches the one in the url parameter
 router.get('/id/:userId', function (req, res) {
     userCollection.findById(req.params.userId, function(err, docs){
         routeErrorHandler(err, docs, res, "Cannot Get the document from Users Collection");
     });
 });
  // update the email of the user with the matching first and last name
-router.put('/name/:firstName-:lastName/email', authenticateToken, function(req, res){
+router.put('/name/:firstName-:lastName/email', function(req, res){
     userCollection.updateOne( {firstName: req.params.firstName, lastName: req.params.lastName}, {emailAddress: req.body.email}, function(err, docs){
+        //routeErrorHandler(err, docs, res, "Cannot Update the document from Users Collection");
         checkUserIdVersusLogin(req.user, docs)
     });
 });
@@ -102,11 +103,12 @@ router.post('/', async function (req, res){
        //if any of the neccessary info is empty
        res.send("sorry, you did not fill all the required information")
     } else {
-        
+        // check if email is already taken
         var takenEmail = await userCollection.findOne( {emailAddress: userInfo.emailAddress} );
         if (takenEmail){
             return res.json({message: "email has been taken"})
         }
+        // check if username is already taken
         var takenUsername = await userCollection.findOne( {username: userInfo.username} );
         if (takenUsername){
             return res.json({message: "username has been taken"})
@@ -121,30 +123,28 @@ router.post('/', async function (req, res){
             phoneNumber: userInfo.phoneNumber,
             emailAddress: userInfo.emailAddress,
             username: userInfo.username,
+            // turn the plain text password into a hash and then save that
             password: bcrypt.hashSync(userInfo.password, 10),
             // the default role of new users is just "User"
             role: "User",
             userStatus: "active",
+            // email verification is false by default until verified
             emailVerification: false
         }).save();
-
-        console.log("the new user is:===============");
-        console.log(newUser);
+        
         var personalKey = process.env.SECRET_KEY_EMAIL + newUser.password;
         var verifyToken = jwt.sign({ id: newUser._id }, personalKey)
-
-        console.log("the new verification token is:===============");
-        console.log(verifyToken)
-
+        // this is the long link typically in verification email and when clicked will verify the email if valid
         verifyLink = `http://localhost:3000/authens/user/${newUser._id}/verify/${verifyToken}`
         
+        // the content of the mail being sent
         var mailOptions = {
             from: process.env.GMAIL_USER,
             to: newUser.emailAddress,
             subject: 'Sending Email using Node.js to verify email',
             html: `Please click this link to verify your email: <a href="${verifyLink}">${verifyLink}</a>`,
           };
-        
+        // call a function from another file to send the email
         sendingEmail(mailOptions);
 
     }

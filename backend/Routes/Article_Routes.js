@@ -118,7 +118,7 @@ router.put('id/:articleId/likes', authenticateToken, function(req, res){
         // removing user like
           docs.articleLikes.splice(index, 1); // 2nd parameter means remove one item only
         } else {
-            // addming user like
+            // adding user like
             docs.articleLikes.push(req.user.id);
         }
         docs.save(function(err, article){

@@ -1,0 +1,265 @@
+User Routes Section:
+Purpose: get all the Documents int the User Collection and send them to the front end as a json file
+input:
+  url: /users
+  mehtod: get
+  params: none
+  body: none
+output:
+  json: [{
+            "_id": {
+              "$oid": "630e7c1058c93c2974c3eb12"
+            },
+            "firstName": "Crysto",
+            "lastName": "Monte",
+            "username": "pitch",
+            "password": "$2a$10$yUX9S5sa9RsvPrUAnlJuNOuGw3X8YYqh3WP204UCjJeUjJzRB1xli",
+            "phoneNumber": 123456,
+            "emailAddress": "zatarrastrider@gmail.com",
+            "role": "User",
+            "userStatus": "active",
+            "emailVerification": true,
+            "__v": 0
+          },
+          ...
+        ]
+  message: none
+
+Purpose: get the users with first and last name that matches the one in the url parameter
+input:
+  url: /users/:firstName-:lastName
+  mehtod: get
+  params: [:firstName, :lastName]
+  body: none
+output:
+  json: {
+            "_id": {
+              "$oid": "630e7c1058c93c2974c3eb12"
+            },
+            "firstName": "Crysto",
+            "lastName": "Monte",
+            "username": "pitch",
+            "password": "$2a$10$yUX9S5sa9RsvPrUAnlJuNOuGw3X8YYqh3WP204UCjJeUjJzRB1xli",
+            "phoneNumber": 123456,
+            "emailAddress": "zatarrastrider@gmail.com",
+            "role": "User",
+            "userStatus": "active",
+            "emailVerification": true,
+            "__v": 0
+        }
+  message: none
+
+Purpose: get the users with the first OR last name that matches the one in the url parameter
+input:
+  url: /users/name/:name
+  mehtod: get
+  params: :name
+  body: none
+output:
+  json: {
+            "_id": {
+              "$oid": "630e7c1058c93c2974c3eb12"
+            },
+            "firstName": "Crysto",
+            "lastName": "Monte",
+            "username": "pitch",
+            "password": "$2a$10$yUX9S5sa9RsvPrUAnlJuNOuGw3X8YYqh3WP204UCjJeUjJzRB1xli",
+            "phoneNumber": 123456,
+            "emailAddress": "zatarrastrider@gmail.com",
+            "role": "User",
+            "userStatus": "active",
+            "emailVerification": true,
+            "__v": 0
+          }
+        
+  message: none
+
+Purpose: get the users with email that matches the one in the url parameter
+input:
+  url: /users/email/:email
+  mehtod: get
+  params: :email
+  body: none
+output:
+  json: {
+            "_id": {
+              "$oid": "630e7c1058c93c2974c3eb12"
+            },
+            "firstName": "Crysto",
+            "lastName": "Monte",
+            "username": "pitch",
+            "password": "$2a$10$yUX9S5sa9RsvPrUAnlJuNOuGw3X8YYqh3WP204UCjJeUjJzRB1xli",
+            "phoneNumber": 123456,
+            "emailAddress": "zatarrastrider@gmail.com",
+            "role": "User",
+            "userStatus": "active",
+            "emailVerification": true,
+            "__v": 0
+          }
+  message: none
+
+Purpose: get the user with the id that matches the one in the url parameter
+input:
+  url: /users/id/:userId
+  mehtod: get
+  params: :userId
+  body: none
+output:
+  json: {
+            "_id": {
+              "$oid": "630e7c1058c93c2974c3eb12"
+            },
+            "firstName": "Crysto",
+            "lastName": "Monte",
+            "username": "pitch",
+            "password": "$2a$10$yUX9S5sa9RsvPrUAnlJuNOuGw3X8YYqh3WP204UCjJeUjJzRB1xli",
+            "phoneNumber": 123456,
+            "emailAddress": "zatarrastrider@gmail.com",
+            "role": "User",
+            "userStatus": "active",
+            "emailVerification": true,
+            "__v": 0
+          }
+  message: none
+
+Purpose: update the email of the user with the matching first and last name
+input:
+  url: /users/name/:firstName-:lastName/email
+  mehtod: put
+  params: [:firstName, :lastName]
+  body: {"email": "your-email@enterhere"}
+output:
+  json: {
+          "acknowledged": true,
+          "modifiedCount": 0,
+          "upsertedId": null,
+          "upsertedCount": 0,
+          "matchedCount": 1
+        }
+  message: none
+
+Purpose:  update the phone number of the user with the matching first and last name
+input:
+  url: /users
+  mehtod: put
+  params: [:firstName, :lastName]
+  body: none
+output:
+  json: [{
+            "_id": {
+              "$oid": "630e7c1058c93c2974c3eb12"
+            },
+            "firstName": "Crysto",
+            "lastName": "Monte",
+            "username": "pitch",
+            "password": "$2a$10$yUX9S5sa9RsvPrUAnlJuNOuGw3X8YYqh3WP204UCjJeUjJzRB1xli",
+            "phoneNumber": 123456,
+            "emailAddress": "zatarrastrider@gmail.com",
+            "role": "User",
+            "userStatus": "active",
+            "emailVerification": true,
+            "__v": 0
+          },
+          ...
+        ]
+  message: none
+  Purpose: get all the Documents int the User Collection and send them to the front end as a json file
+input:
+  url: /users
+  mehtod: get
+  params: none
+  body: none
+output:
+  json: [{
+            "_id": {
+              "$oid": "630e7c1058c93c2974c3eb12"
+            },
+            "firstName": "Crysto",
+            "lastName": "Monte",
+            "username": "pitch",
+            "password": "$2a$10$yUX9S5sa9RsvPrUAnlJuNOuGw3X8YYqh3WP204UCjJeUjJzRB1xli",
+            "phoneNumber": 123456,
+            "emailAddress": "zatarrastrider@gmail.com",
+            "role": "User",
+            "userStatus": "active",
+            "emailVerification": true,
+            "__v": 0
+          },
+          ...
+        ]
+  message: none
+  Purpose: get all the Documents int the User Collection and send them to the front end as a json file
+input:
+  url: /users
+  mehtod: get
+  params: none
+  body: none
+output:
+  json: [{
+            "_id": {
+              "$oid": "630e7c1058c93c2974c3eb12"
+            },
+            "firstName": "Crysto",
+            "lastName": "Monte",
+            "username": "pitch",
+            "password": "$2a$10$yUX9S5sa9RsvPrUAnlJuNOuGw3X8YYqh3WP204UCjJeUjJzRB1xli",
+            "phoneNumber": 123456,
+            "emailAddress": "zatarrastrider@gmail.com",
+            "role": "User",
+            "userStatus": "active",
+            "emailVerification": true,
+            "__v": 0
+          },
+          ...
+        ]
+  message: none
+  Purpose: get all the Documents int the User Collection and send them to the front end as a json file
+input:
+  url: /users
+  mehtod: get
+  params: none
+  body: none
+output:
+  json: [{
+            "_id": {
+              "$oid": "630e7c1058c93c2974c3eb12"
+            },
+            "firstName": "Crysto",
+            "lastName": "Monte",
+            "username": "pitch",
+            "password": "$2a$10$yUX9S5sa9RsvPrUAnlJuNOuGw3X8YYqh3WP204UCjJeUjJzRB1xli",
+            "phoneNumber": 123456,
+            "emailAddress": "zatarrastrider@gmail.com",
+            "role": "User",
+            "userStatus": "active",
+            "emailVerification": true,
+            "__v": 0
+          },
+          ...
+        ]
+  message: none
+  Purpose: get all the Documents int the User Collection and send them to the front end as a json file
+input:
+  url: /users
+  mehtod: get
+  params: none
+  body: none
+output:
+  json: [{
+            "_id": {
+              "$oid": "630e7c1058c93c2974c3eb12"
+            },
+            "firstName": "Crysto",
+            "lastName": "Monte",
+            "username": "pitch",
+            "password": "$2a$10$yUX9S5sa9RsvPrUAnlJuNOuGw3X8YYqh3WP204UCjJeUjJzRB1xli",
+            "phoneNumber": 123456,
+            "emailAddress": "zatarrastrider@gmail.com",
+            "role": "User",
+            "userStatus": "active",
+            "emailVerification": true,
+            "__v": 0
+          },
+          ...
+        ]
+  message: none
