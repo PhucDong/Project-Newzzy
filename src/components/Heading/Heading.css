@@ -1,19 +1,19 @@
 .heading {
-    margin-bottom: 16px;
-    background-image: url("../../images/title-pattern.png");
-    height: 35px;
-    background-position: center;
-  }
+  margin-bottom: 16px;
+  background-image: url("../../images/title-pattern.png");
+  height: 40px;
+  background-position: center;
+}
 
 .heading h6 {
-    font-weight: 400;
-    background: #0236FA;
-    color: #fff;
-    height: 35px;
-    width: 130px;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-size: 14px;
-    }
+  font-weight: 400;
+  background: #2565ae;
+  color: #fff;
+  height: 40px;
+  width: 180px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}

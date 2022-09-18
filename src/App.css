@@ -28,10 +28,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-left: 5px solid #0236FA;
+  border-left: 5px solid #2565ae;
   width: auto;
   display: block;
-  background: linear-gradient(to right, #0236FA 50%, black 50%);
+  background: linear-gradient(to right, #2565ae 50%, black 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
